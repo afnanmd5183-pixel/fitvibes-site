@@ -1,0 +1,31 @@
+{
+  "kicker": "NOT A RULEBOOK. A REFERENCE POINT.",
+  "title": "Style should feel like you.",
+  "intro": "Fitvi.bes is a little corner of the internet for discovering outfits, watches and accessories that make getting dressed feel easier—and more personal.",
+  "button_text": "Explore the edit",
+  "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1100&q=85",
+  "story_title": "Good style is a feeling, not a price tag.",
+  "story": "We collect inspiration and product finds for people who want to look put-together without making style feel complicated. Some days call for a clean tee and sneakers; other days, one good watch does the talking. The point is to find what feels right for you.",
+  "principles": [
+    {
+      "number": "01",
+      "icon": "◒",
+      "title": "Wearable over viral",
+      "description": "We favour pieces you can imagine working in real life, not just in a trend cycle."
+    },
+    {
+      "number": "02",
+      "icon": "✳",
+      "title": "Details matter",
+      "description": "Fit, shape, colour and small design choices can make a piece more versatile."
+    },
+    {
+      "number": "03",
+      "icon": "↗",
+      "title": "Clear, not overhyped",
+      "description": "We share what we can verify and avoid pretending every product is perfect."
+    }
+  ],
+  "disclosure": "Some links on Fitvi.bes may be affiliate links. If you choose to buy through one, we may earn a commission at no extra cost to you. We aim to make recommendations helpful and clearly disclose affiliate relationships. Product prices and availability can change, so check the retailer's page before buying.",
+  "amazon_disclosure": "As an Amazon Associate I earn from qualifying purchases."
+}

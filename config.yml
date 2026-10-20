@@ -1,0 +1,119 @@
+# Fitvi.bes content editor
+# Replace the placeholder below with your real Decap Turbo Site ID after setup.
+backend:
+  name: turbo-github
+  turbo_site_id: REPLACE_WITH_DECAP_TURBO_SITE_ID
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+logo_url: /assets/fitvibes-mark.svg
+
+collections:
+  - name: site_settings
+    label: Site & Home Page
+    files:
+      - name: site
+        label: Site Settings
+        file: content/site.json
+        format: json
+        fields:
+          - { label: Brand Name, name: brand, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Announcement Bar, name: announcement, widget: string }
+          - { label: Home Eyebrow, name: hero_kicker, widget: string }
+          - { label: Home Headline, name: hero_title, widget: text, hint: "Use a new line to separate the headline from its italic second line." }
+          - { label: Home Description, name: hero_description, widget: text }
+          - { label: Home Button Text, name: hero_button_text, widget: string }
+          - { label: Home Button Link, name: hero_button_url, widget: string, hint: "For example: /products.html" }
+          - { label: Home Small Note, name: hero_note, widget: string }
+          - { label: Hero Image URL or Uploaded Image, name: hero_image, widget: image, allow_input: true, hint: "Paste an https image URL, or use a path like /images/uploads/your-image.jpg." }
+          - { label: Detail Image URL or Uploaded Image, name: hero_detail_image, widget: image, allow_input: true, hint: "Paste an https image URL or an uploaded image path." }
+          - { label: Products Page Eyebrow, name: products_kicker, widget: string }
+          - { label: Products Page Headline, name: products_title, widget: string }
+          - { label: Products Page Description, name: products_description, widget: text }
+
+  - name: home_sections
+    label: Home Sections
+    files:
+      - name: sections
+        label: Sections / Collections
+        file: content/sections.json
+        format: json
+        fields:
+          - label: Sections
+            name: sections
+            widget: list
+            label_singular: Section
+            summary: "{{fields.name}} · {{fields.key}}"
+            collapsed: true
+            fields:
+              - { label: Section Name (navigation/filter label), name: name, widget: string }
+              - { label: Unique Section Key, name: key, widget: string, hint: "Use lowercase letters/numbers/hyphens, e.g. bags or college-fits. Products must use the same key." }
+              - { label: Card Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Image URL or Uploaded Image Path, name: image, widget: image, allow_input: true, hint: "Use a direct https image URL or /images/uploads/filename.jpg." }
+              - { label: Section Link, name: link_url, widget: string, hint: "Usually /products.html?section=watches, replacing watches with this section's key." }
+              - { label: Button Label, name: button_text, widget: string, required: false }
+              - { label: Display Order, name: order, widget: number, value_type: int, min: 1, default: 1 }
+              - { label: Show on Website, name: enabled, widget: boolean, default: true }
+
+  - name: products
+    label: Products
+    files:
+      - name: products_catalog
+        label: Product Catalog
+        file: content/products.json
+        format: json
+        fields:
+          - label: Products
+            name: products
+            widget: list
+            label_singular: Product
+            summary: "{{fields.title}} · {{fields.section_key}}"
+            collapsed: true
+            fields:
+              - { label: Product ID (unique), name: id, widget: string, hint: "Use a simple unique ID, e.g. navy-overshirt." }
+              - { label: Product Title, name: title, widget: string }
+              - { label: Section Key, name: section_key, widget: string, hint: "Must exactly match a Home Section key, such as watches, outfits, accessories, or bags." }
+              - { label: Short Tagline, name: tagline, widget: string, required: false }
+              - { label: Description, name: description, widget: text }
+              - { label: Image URL or Uploaded Image Path, name: image, widget: image, allow_input: true, hint: "Paste a direct https image URL, or /images/uploads/filename.jpg." }
+              - { label: Price Note, name: price_note, widget: string, hint: "Safer wording: Check retailer for current price." }
+              - { label: Retailer, name: retailer, widget: string, hint: "For example Amazon US, Amazon India or Meesho." }
+              - { label: Target Marketplace, name: market, widget: string, hint: "For example USA, India or UK." }
+              - { label: Affiliate URL, name: affiliate_url, widget: string, hint: "Paste your actual tracked affiliate URL. Use https:// and test it before publishing." }
+              - { label: Button Text, name: button_text, widget: string, default: "View the find" }
+              - { label: Small Badge, name: badge, widget: string, required: false }
+              - { label: Featured on Home, name: featured, widget: boolean, default: false }
+              - { label: Visible on Website, name: active, widget: boolean, default: true }
+              - { label: Display Order, name: order, widget: number, value_type: int, min: 1, default: 1 }
+
+  - name: about_page
+    label: About Fitvi.bes
+    files:
+      - name: about
+        label: About Page Content
+        file: content/about.json
+        format: json
+        fields:
+          - { label: Eyebrow, name: kicker, widget: string }
+          - { label: Main Headline, name: title, widget: string }
+          - { label: Introduction, name: intro, widget: text }
+          - { label: Button Text, name: button_text, widget: string }
+          - { label: About Image URL or Uploaded Image Path, name: image, widget: string }
+          - { label: Story Headline, name: story_title, widget: string }
+          - { label: Story / Mission, name: story, widget: text }
+          - label: How We Choose Principles
+            name: principles
+            widget: list
+            label_singular: Principle
+            summary: "{{fields.title}}"
+            collapsed: true
+            fields:
+              - { label: Number, name: number, widget: string }
+              - { label: Icon Symbol, name: icon, widget: string, required: false }
+              - { label: Principle Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+          - { label: Affiliate Disclosure, name: disclosure, widget: text }
+          - { label: Amazon Required Statement, name: amazon_disclosure, widget: string }

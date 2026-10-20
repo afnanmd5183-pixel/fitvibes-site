@@ -1,0 +1,37 @@
+{
+  "sections": [
+    {
+      "name": "Outfits",
+      "key": "outfits",
+      "title": "Everyday fits, main-character energy.",
+      "description": "Easy outfit ideas and wearable pieces for your everyday rotation.",
+      "image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85",
+      "link_url": "/products.html?section=outfits",
+      "button_text": "Explore outfits",
+      "order": 1,
+      "enabled": true
+    },
+    {
+      "name": "Watches",
+      "key": "watches",
+      "title": "The detail that does the most.",
+      "description": "Classic dials, clean straps and little finishing touches.",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85",
+      "link_url": "/products.html?section=watches",
+      "button_text": "Explore watches",
+      "order": 2,
+      "enabled": true
+    },
+    {
+      "name": "Accessories",
+      "key": "accessories",
+      "title": "Small things. Serious impact.",
+      "description": "Bags, belts and everyday add-ons that finish the fit.",
+      "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=85",
+      "link_url": "/products.html?section=accessories",
+      "button_text": "Explore accessories",
+      "order": 3,
+      "enabled": true
+    }
+  ]
+}

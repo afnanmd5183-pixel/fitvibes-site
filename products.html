@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142944">
+  <meta name="description" content="Browse Fitvi.bes outfit inspiration, watches and accessory finds.">
+  <title>Products & Finds — Fitvi.bes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/app.js"></script>
+</head>
+<body data-page="products">
+  <div class="announcement"><span class="announcement-dot"></span><span data-site="announcement">THE STYLE FILE · GOOD FINDS, NO FUSS</span><span class="announcement-right">CURATED FOR YOUR EVERYDAY</span></div>
+  <header class="site-header">
+    <a class="brand" href="/index.html" aria-label="Fitvi.bes home"><span class="brand-mark">f.</span><span class="brand-name" data-site="brand">Fitvi.bes</span><span class="brand-period">®</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation"><a class="nav-link" href="/index.html">Home</a><a class="nav-link is-active" href="/products.html" aria-current="page">Products <span class="nav-arrow">↗</span></a><a class="nav-link" href="/about.html">About Fitvi.bes</a></nav>
+    <a class="header-cta" href="/about.html">Our point of view <span>↗</span></a>
+  </header>
+  <main>
+    <section class="page-hero section-shell products-page-hero">
+      <div class="page-hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span><span data-site="products_kicker">THE GOOD FINDS EDIT</span></div><h1 data-site="products_title">The good <em>finds.</em></h1><p data-site="products_description">Outfits, everyday details and accessories worth a second look. Scroll your mood, find your thing.</p><div class="page-hero-meta"><span><span class="status-dot"></span> UPDATED AS WE FIND GOOD STUFF</span><span>NO ONE-SIZE-FITS-ALL STYLE.</span></div></div>
+      <div class="page-hero-art"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1100&q=85" alt="A curated mix of clothing and accessories"><div class="art-label"><span>THE STYLE FILE</span><span>VOL. 01 · EVERYDAY EDITION</span></div></div>
+    </section>
+    <section class="product-browser section-shell">
+      <div class="browser-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span>THE LINEUP</div><h2>Find your <em>next fave.</em></h2></div><span id="product-count" class="product-count">A curated collection</span></div>
+      <div class="browser-tools"><div id="category-filters" class="category-filters" aria-label="Filter products by category"><button class="filter-chip is-selected" data-filter="all" type="button">All finds <span>✳</span></button><button class="filter-chip" data-filter="outfits" type="button">Outfits</button><button class="filter-chip" data-filter="watches" type="button">Watches</button><button class="filter-chip" data-filter="accessories" type="button">Accessories</button></div><label class="search-box"><span class="search-icon">⌕</span><input id="product-search" type="search" placeholder="Search the edit..." aria-label="Search products"><kbd>↵</kbd></label></div>
+      <div id="active-filter-note" class="active-filter-note" hidden></div>
+      <div id="product-grid" class="product-grid" aria-live="polite">
+        <article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85" alt="Minimal watch"><span class="product-badge">THE DETAIL</span><button class="save-button" aria-label="Saved items are not available yet" disabled>＋</button></div><div class="product-info"><div class="product-meta"><span>WATCHES</span><span>THE CLASSIC</span></div><h3>Minimal dial, maximum wear</h3><p>One of those details that works with almost anything.</p><div class="product-card-bottom"><span class="price-note">CHECK RETAILER</span><span class="deal-link deal-link-disabled">Link coming soon ↗</span></div></div></article>
+      </div>
+      <div id="empty-products" class="empty-products" hidden><span class="empty-sparkle">✳</span><h3>No finds in this filter (yet).</h3><p>Try another category or search. The edit is always evolving.</p><button class="button button-primary" id="clear-filters" type="button">Show all finds <span class="button-icon">↗</span></button></div>
+      <div class="affiliate-note"><span class="note-symbol">i</span><p><strong>A quick heads-up:</strong> Some links may be affiliate links, which means Fitvi.bes may earn a commission if you buy through them, at no extra cost to you. We aim to keep our recommendations useful and transparent.</p></div>
+    </section>
+    <section class="products-closer"><div class="section-shell closer-inner"><span class="closer-star">✳</span><div><span class="eyebrow eyebrow-light">STILL FIGURING OUT YOUR VIBE?</span><h2>Start with what <em>feels like you.</em></h2></div><a class="button button-light" href="/about.html">Meet Fitvi.bes <span class="button-icon">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-top section-shell"><div class="footer-brand-block"><a class="brand brand-footer" href="/index.html"><span class="brand-mark">f.</span><span class="brand-name" data-site="brand">Fitvi.bes</span></a><p data-site="tagline">Find your fit. Smarter finds. Better style.</p></div><div class="footer-links"><div><span class="footer-label">EXPLORE</span><a href="/index.html">Home</a><a href="/products.html">Products</a><a href="/about.html">About Fitvi.bes</a></div><div><span class="footer-label">THE FINE PRINT</span><a href="/about.html#disclosure">Affiliate disclosure</a><a href="/about.html#how-we-choose">How we choose</a></div></div></div><div class="footer-bottom section-shell"><span>© <span id="current-year">2026</span> FITVI.BES. MADE FOR YOUR EVERYDAY.</span><span>GOOD TASTE IS PERSONAL. ✳</span></div></footer>
+</body>
+</html>
